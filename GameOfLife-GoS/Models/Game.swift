@@ -29,7 +29,6 @@ class Game {
     }
     
     func iterate() -> GameState  {
-        print("Next State")
         var nextState = currentState
         for i in 0...width - 1 {
             for j in 0...height - 1 {

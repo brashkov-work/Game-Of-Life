@@ -6,9 +6,20 @@
 //
 
 import Foundation
+import UIKit
 
-struct CellModel {
+class CellModel {
+    static let cellSize = 10
+    
     var isAlive: Bool = false
+    
+    var cellColor: UIColor {
+        return isAlive ?  UIColor.green : UIColor.white
+    }
+    
+    init(isAlive: Bool) {
+        self.isAlive = isAlive
+    }
     
     static func makeDeadCell() -> CellModel {
         return CellModel(isAlive: false)

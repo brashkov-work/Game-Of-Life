@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,70 +14,13 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0hX-9d-sfY">
-                                <rect key="frame" x="20" y="94" width="374" height="718"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="1yU-iw-JUI">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LifePointCollectionViewCell" id="kbr-eA-xOT" customClass="LifePointCollectionViewCell" customModule="GameOfLife_GoS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUZ-US-lYw">
-                                                    <rect key="frame" x="4" y="4" width="42.5" height="42.5"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="qUZ-US-lYw" secondAttribute="height" id="3va-6L-HjN"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="qUZ-US-lYw" firstAttribute="centerX" secondItem="kbr-eA-xOT" secondAttribute="centerX" id="5zk-gT-X8d"/>
-                                            <constraint firstItem="qUZ-US-lYw" firstAttribute="centerY" secondItem="kbr-eA-xOT" secondAttribute="centerY" id="XSg-qy-O13"/>
-                                            <constraint firstItem="qUZ-US-lYw" firstAttribute="width" secondItem="kbr-eA-xOT" secondAttribute="width" multiplier="0.85" id="qYb-c4-XTz"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="cellView" destination="qUZ-US-lYw" id="Tob-QC-EAj"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="vEY-68-CoR"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="SXJ-rW-Zul"/>
-                                </connections>
-                            </collectionView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="0hX-9d-sfY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="29e-Y4-wwA"/>
-                            <constraint firstItem="0hX-9d-sfY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="BaM-YI-UQB"/>
-                            <constraint firstItem="0hX-9d-sfY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-50" id="ByD-OP-fzr"/>
-                            <constraint firstItem="0hX-9d-sfY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hX8-60-GFT"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="boardCollectionView" destination="0hX-9d-sfY" id="OO1-b7-oqB"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="88.392857142857139"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

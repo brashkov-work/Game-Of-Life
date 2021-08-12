@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6123465326C5A3E1005F2234 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123465226C5A3E1005F2234 /* GridView.swift */; };
 		6180001E26C5390400C98095 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6180001D26C5390400C98095 /* AppDelegate.swift */; };
 		6180002026C5390400C98095 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6180001F26C5390400C98095 /* SceneDelegate.swift */; };
 		6180002226C5390400C98095 /* GoSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6180002126C5390400C98095 /* GoSViewController.swift */; };
@@ -15,10 +16,12 @@
 		6180002A26C5390700C98095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6180002826C5390700C98095 /* LaunchScreen.storyboard */; };
 		6180003526C5390800C98095 /* GameOfLife_GoSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6180003426C5390800C98095 /* GameOfLife_GoSTests.swift */; };
 		6180004026C5390800C98095 /* GameOfLife_GoSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6180003F26C5390800C98095 /* GameOfLife_GoSUITests.swift */; };
-		6180005026C5464E00C98095 /* LifePointCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6180004F26C5464E00C98095 /* LifePointCollectionViewCell.swift */; };
 		6180005326C56DDF00C98095 /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6180005226C56DDF00C98095 /* CellModel.swift */; };
 		6180005526C56DFC00C98095 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6180005426C56DFC00C98095 /* GameState.swift */; };
 		6180005726C56E2800C98095 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6180005626C56E2800C98095 /* Game.swift */; };
+		A2A3C1434830A31CB3D26D3A /* Pods_GameOfLife_GoS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875AA62B025C787AC6ACB828 /* Pods_GameOfLife_GoS.framework */; };
+		CF033EECCAB230A000EE3BAA /* Pods_GameOfLife_GoSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24FAADD4166E6BF6355493FC /* Pods_GameOfLife_GoSTests.framework */; };
+		E237FD6E643816654FC960B1 /* Pods_GameOfLife_GoS_GameOfLife_GoSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0A4A4BFE3291D5243D24F /* Pods_GameOfLife_GoS_GameOfLife_GoSUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24FAADD4166E6BF6355493FC /* Pods_GameOfLife_GoSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameOfLife_GoSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33202CE259A4B2DEB73230F5 /* Pods-GameOfLife-GoS-GameOfLife-GoSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameOfLife-GoS-GameOfLife-GoSUITests.debug.xcconfig"; path = "Target Support Files/Pods-GameOfLife-GoS-GameOfLife-GoSUITests/Pods-GameOfLife-GoS-GameOfLife-GoSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		488BE47A98EC6FD02AF57522 /* Pods-GameOfLife-GoSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameOfLife-GoSTests.release.xcconfig"; path = "Target Support Files/Pods-GameOfLife-GoSTests/Pods-GameOfLife-GoSTests.release.xcconfig"; sourceTree = "<group>"; };
+		5EC0A4A4BFE3291D5243D24F /* Pods_GameOfLife_GoS_GameOfLife_GoSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameOfLife_GoS_GameOfLife_GoSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6123465226C5A3E1005F2234 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		6180001A26C5390400C98095 /* GameOfLife-GoS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GameOfLife-GoS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6180001D26C5390400C98095 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6180001F26C5390400C98095 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,10 +61,14 @@
 		6180003B26C5390800C98095 /* GameOfLife-GoSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GameOfLife-GoSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6180003F26C5390800C98095 /* GameOfLife_GoSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLife_GoSUITests.swift; sourceTree = "<group>"; };
 		6180004126C5390800C98095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6180004F26C5464E00C98095 /* LifePointCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifePointCollectionViewCell.swift; sourceTree = "<group>"; };
 		6180005226C56DDF00C98095 /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		6180005426C56DFC00C98095 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		6180005626C56E2800C98095 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		627F9074E71E6AB08B2697EA /* Pods-GameOfLife-GoSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameOfLife-GoSTests.debug.xcconfig"; path = "Target Support Files/Pods-GameOfLife-GoSTests/Pods-GameOfLife-GoSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		875AA62B025C787AC6ACB828 /* Pods_GameOfLife_GoS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameOfLife_GoS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3E325F16BC7F83B29A8516 /* Pods-GameOfLife-GoS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameOfLife-GoS.release.xcconfig"; path = "Target Support Files/Pods-GameOfLife-GoS/Pods-GameOfLife-GoS.release.xcconfig"; sourceTree = "<group>"; };
+		A4410F124951D02C4FC5BFB8 /* Pods-GameOfLife-GoS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameOfLife-GoS.debug.xcconfig"; path = "Target Support Files/Pods-GameOfLife-GoS/Pods-GameOfLife-GoS.debug.xcconfig"; sourceTree = "<group>"; };
+		C9261984D15AC39129878B54 /* Pods-GameOfLife-GoS-GameOfLife-GoSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameOfLife-GoS-GameOfLife-GoSUITests.release.xcconfig"; path = "Target Support Files/Pods-GameOfLife-GoS-GameOfLife-GoSUITests/Pods-GameOfLife-GoS-GameOfLife-GoSUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2A3C1434830A31CB3D26D3A /* Pods_GameOfLife_GoS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF033EECCAB230A000EE3BAA /* Pods_GameOfLife_GoSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +92,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E237FD6E643816654FC960B1 /* Pods_GameOfLife_GoS_GameOfLife_GoSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		184FD306BAD25F9AA0736EA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4410F124951D02C4FC5BFB8 /* Pods-GameOfLife-GoS.debug.xcconfig */,
+				8C3E325F16BC7F83B29A8516 /* Pods-GameOfLife-GoS.release.xcconfig */,
+				33202CE259A4B2DEB73230F5 /* Pods-GameOfLife-GoS-GameOfLife-GoSUITests.debug.xcconfig */,
+				C9261984D15AC39129878B54 /* Pods-GameOfLife-GoS-GameOfLife-GoSUITests.release.xcconfig */,
+				627F9074E71E6AB08B2697EA /* Pods-GameOfLife-GoSTests.debug.xcconfig */,
+				488BE47A98EC6FD02AF57522 /* Pods-GameOfLife-GoSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4FD7987794D7D107BB62B293 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				875AA62B025C787AC6ACB828 /* Pods_GameOfLife_GoS.framework */,
+				5EC0A4A4BFE3291D5243D24F /* Pods_GameOfLife_GoS_GameOfLife_GoSUITests.framework */,
+				24FAADD4166E6BF6355493FC /* Pods_GameOfLife_GoSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6123465126C5A3D4005F2234 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6123465226C5A3E1005F2234 /* GridView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		6180001126C5390400C98095 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +137,8 @@
 				6180003326C5390800C98095 /* GameOfLife-GoSTests */,
 				6180003E26C5390800C98095 /* GameOfLife-GoSUITests */,
 				6180001B26C5390400C98095 /* Products */,
+				184FD306BAD25F9AA0736EA4 /* Pods */,
+				4FD7987794D7D107BB62B293 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				6180002126C5390400C98095 /* GoSViewController.swift */,
-				6180004F26C5464E00C98095 /* LifePointCollectionViewCell.swift */,
+				6123465126C5A3D4005F2234 /* Views */,
 				6180005126C56DC600C98095 /* Models */,
 				6180004E26C539F600C98095 /* Storyboards */,
 				6180004D26C539C400C98095 /* Supporting Files */,
@@ -171,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6180004426C5390800C98095 /* Build configuration list for PBXNativeTarget "GameOfLife-GoS" */;
 			buildPhases = (
+				EFE9AF1870078D07BA637C0B /* [CP] Check Pods Manifest.lock */,
 				6180001626C5390400C98095 /* Sources */,
 				6180001726C5390400C98095 /* Frameworks */,
 				6180001826C5390400C98095 /* Resources */,
+				C9C57A5B877E95AB69077EAB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,6 +238,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6180004726C5390800C98095 /* Build configuration list for PBXNativeTarget "GameOfLife-GoSTests" */;
 			buildPhases = (
+				6C8324B6EE51E460C68F0638 /* [CP] Check Pods Manifest.lock */,
 				6180002C26C5390800C98095 /* Sources */,
 				6180002D26C5390800C98095 /* Frameworks */,
 				6180002E26C5390800C98095 /* Resources */,
@@ -206,9 +257,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6180004A26C5390800C98095 /* Build configuration list for PBXNativeTarget "GameOfLife-GoSUITests" */;
 			buildPhases = (
+				9C1F20F9EE120E2DFFF755CE /* [CP] Check Pods Manifest.lock */,
 				6180003726C5390800C98095 /* Sources */,
 				6180003826C5390800C98095 /* Frameworks */,
 				6180003926C5390800C98095 /* Resources */,
+				A4BFD25817F91AE3292C5FCE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,6 +342,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C8324B6EE51E460C68F0638 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GameOfLife-GoSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C1F20F9EE120E2DFFF755CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GameOfLife-GoS-GameOfLife-GoSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4BFD25817F91AE3292C5FCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameOfLife-GoS-GameOfLife-GoSUITests/Pods-GameOfLife-GoS-GameOfLife-GoSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameOfLife-GoS-GameOfLife-GoSUITests/Pods-GameOfLife-GoS-GameOfLife-GoSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GameOfLife-GoS-GameOfLife-GoSUITests/Pods-GameOfLife-GoS-GameOfLife-GoSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9C57A5B877E95AB69077EAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameOfLife-GoS/Pods-GameOfLife-GoS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameOfLife-GoS/Pods-GameOfLife-GoS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GameOfLife-GoS/Pods-GameOfLife-GoS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFE9AF1870078D07BA637C0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GameOfLife-GoS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6180001626C5390400C98095 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -297,10 +453,10 @@
 				6180002226C5390400C98095 /* GoSViewController.swift in Sources */,
 				6180001E26C5390400C98095 /* AppDelegate.swift in Sources */,
 				6180005726C56E2800C98095 /* Game.swift in Sources */,
+				6123465326C5A3E1005F2234 /* GridView.swift in Sources */,
 				6180002026C5390400C98095 /* SceneDelegate.swift in Sources */,
 				6180005526C56DFC00C98095 /* GameState.swift in Sources */,
 				6180005326C56DDF00C98095 /* CellModel.swift in Sources */,
-				6180005026C5464E00C98095 /* LifePointCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +629,7 @@
 		};
 		6180004526C5390800C98095 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4410F124951D02C4FC5BFB8 /* Pods-GameOfLife-GoS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -492,6 +649,7 @@
 		};
 		6180004626C5390800C98095 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C3E325F16BC7F83B29A8516 /* Pods-GameOfLife-GoS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -511,6 +669,7 @@
 		};
 		6180004826C5390800C98095 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 627F9074E71E6AB08B2697EA /* Pods-GameOfLife-GoSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +692,7 @@
 		};
 		6180004926C5390800C98095 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 488BE47A98EC6FD02AF57522 /* Pods-GameOfLife-GoSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -555,6 +715,7 @@
 		};
 		6180004B26C5390800C98095 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33202CE259A4B2DEB73230F5 /* Pods-GameOfLife-GoS-GameOfLife-GoSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -575,6 +736,7 @@
 		};
 		6180004C26C5390800C98095 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9261984D15AC39129878B54 /* Pods-GameOfLife-GoS-GameOfLife-GoSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

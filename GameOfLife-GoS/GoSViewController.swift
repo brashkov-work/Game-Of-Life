@@ -8,27 +8,13 @@
 import UIKit
 
 class GoSViewController: UIViewController {
-
-    @IBOutlet weak var boardCollectionView: UICollectionView!
     
-    var dataSource: [CellModel]  = [] {
-        didSet {
-            self.boardCollectionView.reloadData()
-        }
-    }
-
-    let pixelSize = 15
-    var boardWidth: Int {
-        let tempWidth = Int(floor(boardCollectionView.frame.size.width/CGFloat(pixelSize)))
-        return tempWidth
-    }
-    var boardHeight: Int {
-        let tempHeight = Int(floor(boardCollectionView.frame.size.height/CGFloat(pixelSize)))
-        return tempHeight
-        
-    }
-
+    private var gridViewWidht: CGFloat = 0
+    private var gridViewHeight: CGFloat = 0
+    
+    var dataSource: [CellModel]  = []
     var game: Game!
+    var gridView: GridView?
 
     override var prefersStatusBarHidden: Bool {
         return true
@@ -37,11 +23,19 @@ class GoSViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.darkGray
+        
+        gridViewWidht = self.view.frame.size.width
+        gridViewHeight = self.view.frame.size.height / 2
+        
+        self.gridView = GridView(frame: CGRect(x: 0, y: 0, width: Int(gridViewWidht), height: Int(gridViewHeight)))
+        gridView!.delegate = self
+        self.view.addSubview(gridView!)
+        gridView!.center = self.view.center
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        game = Game(width: boardWidth, height: boardHeight)
+        game = Game(width: Int(gridViewWidht) / Int(CGFloat(CellModel.cellSize)), height: Int(gridViewHeight) / Int(CellModel.cellSize))
         game.addStateObserver { [weak self] state in
             self?.display(state)
         }
@@ -49,28 +43,11 @@ class GoSViewController: UIViewController {
     
     func display(_ state: GameState) {
         self.dataSource = state.cells
+       
+        guard self.gridView != nil else { return }
+        
+        self.gridView!.setNeedsDisplay()
     }
-}
-
-extension GoSViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataSource.count
-    }
-
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(LifePointCollectionViewCell.self)", for: indexPath) as! LifePointCollectionViewCell
-        cell.configureWithState(dataSource[indexPath.item].isAlive)
-        return cell
-    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: pixelSize, height: pixelSize)
-    }
-
 }
 
 
